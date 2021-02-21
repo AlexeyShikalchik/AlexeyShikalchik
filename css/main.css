@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.hometask {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
