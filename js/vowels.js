@@ -25,15 +25,15 @@ function countingVowels(str) {
         letter19: 'Е',
         letter20: 'Ё',
     }
-    var quatity = 0;  
+    var quantity = 0;  
     for (var i = 0; i <= str.length-1; i++) {
         for (var key in vowels) {
             if (str[i] === vowels[key]) {
-                quatity++;
+                quantity++;
             }
         }
     }
-    return console.log(quatity);
+    return console.log(quantity);
 };
 
 countingVowels(getStr);
