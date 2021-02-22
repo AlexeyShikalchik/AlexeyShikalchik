@@ -1,5 +1,5 @@
 'use strict'
-// debugger
+
 const getStr = prompt('Введите любую строчку:');
 
 function countingVowels(str) {
