@@ -10,28 +10,29 @@ function HashStorageFunc(name, age, sex, growth) {
     that.growth = growth;
 
     that.addValue = function(key, value) {
-        return that[key] = value;
+        that[key] = value;
+        return console.log(that[key]);
     };
 
-    that.getValue = function(key) {
-        return that[key];
-    };
+    // that.getValue = function(key) {
+    //     return that[key];
+    // };
 
-    that.deleteValue = function(key) {
-        that[key] = null
-        if (that[key] === null) {
-            return true;
-        } else {
-            return false;
-        };
-    };
+    // that.deleteValue = function(key) {
+    //     that[key] = null;
+    //     if (that[key] === null) {
+    //         return true;
+    //     } else {
+    //         return false;
+    //     };
+    // };
     
-    that.getKeys = function(key) {
-        return that[key];
-    };
+    // that.getKeys = function(key) {
+    //     return that[key];
+    // };
     
 };
 
 let alex = new HashStorageFunc('Alex', 22, 'Man', 174);
 
-console.log(alex.addValue(surname, 'Shikalchik'));
+alex.addValue(surname, 'Shikalchik');
