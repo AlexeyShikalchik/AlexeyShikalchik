@@ -3,13 +3,13 @@
 function HashStorageFunc(name, age, sex, growth) {
 
     const that = this;
-
+    
     that.name = name;
     that.age = age;
     that.sex = sex;
     that.growth = growth;
 
-    debugger
+    // debugger
 
     that.addValue = function(key, value) {
         return that[key] = value;
