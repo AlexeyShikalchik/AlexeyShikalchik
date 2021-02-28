@@ -9,9 +9,10 @@ function HashStorageFunc(name, age, sex, growth) {
     that.sex = sex;
     that.growth = growth;
 
+    debugger
+
     that.addValue = function(key, value) {
-        that[key] = value;
-        return console.log(that[key]);
+        return that[key] = value;
     };
 
     // that.getValue = function(key) {
@@ -33,6 +34,8 @@ function HashStorageFunc(name, age, sex, growth) {
     
 };
 
-let alex = new HashStorageFunc('Alex', 22, 'Man', 174);
+const alex = new HashStorageFunc('Alex', 22, 'Man', 174);
+const olga = new HashStorageFunc('Olga', 20, 'Woman', 168);
 
 alex.addValue(surname, 'Shikalchik');
+console.log(alex.surname);
